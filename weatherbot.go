@@ -43,7 +43,6 @@ func WeatherHandler(ctx context.Context, bot *slackbot.Bot, evt *slack.MessageEv
 		fmt.Println("Could not get weather:", err)
 		return
 	}
-
 	description := ""
 	if len(weather.Weather) > 0 {
 		description = weather.Weather[0].Description
