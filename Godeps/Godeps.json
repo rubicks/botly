@@ -1,0 +1,31 @@
+{
+	"ImportPath": "github.com/rubicks/golang-lab-slack",
+	"GoVersion": "go1.6.3",
+	"Packages": [
+		"./exercises/..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/BeepBoopHQ/go-slackbot",
+			"Rev": "58027c0d5238a0604305652ea526b3c18a7cead1"
+		},
+		{
+			"ImportPath": "github.com/briandowns/openweathermap",
+			"Comment": "0.5-69-g30dadd6",
+			"Rev": "30dadd6641b6903c9640e883dd755ccd5d00441a"
+		},
+		{
+			"ImportPath": "github.com/nlopes/slack",
+			"Comment": "v0.0.1-118-g4feee83",
+			"Rev": "4feee83bb2b31d790977ce727a028c6a542c72c7"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "9f2c271364b418388d150f9c12ecbf12794095c1"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "9f2c271364b418388d150f9c12ecbf12794095c1"
+		}
+	]
+}
