@@ -17,7 +17,7 @@ func main() {
 func GetWeather(place string) (*openweathermap.CurrentWeatherData, error) {
 	w, err := openweathermap.NewCurrent("F", "en")
 	if err != nil {
-		return nil, fmt.Errorf("Could not get weather: %s", err)
+		return nil, fmt.Errorf("Could not get weather: %v", err)
 	}
 
 	err = w.CurrentByName(place)
