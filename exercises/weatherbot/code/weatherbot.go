@@ -2,14 +2,12 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"strings"
-
-	"golang.org/x/net/context"
-
 	slackbot "github.com/BeepBoopHQ/go-slackbot"
 	"github.com/briandowns/openweathermap"
 	"github.com/nlopes/slack"
+	"golang.org/x/net/context"
+	"os"
+	"strings"
 )
 
 func main() {
@@ -24,7 +22,7 @@ func GetWeather(place string) (*openweathermap.CurrentWeatherData, error) {
 
 	err = w.CurrentByName(place)
 	if err != nil {
-		return nil, fmt.Errorf("Weather fetch fail:", err)
+		return nil, fmt.Errorf("Weather fetch fail: %v", err)
 	}
 	return w, nil
 }
@@ -50,5 +48,10 @@ func WeatherHandler(ctx context.Context, bot *slackbot.Bot, evt *slack.MessageEv
 	if len(weather.Weather) > 0 {
 		description = weather.Weather[0].Description
 	}
-	bot.Reply(evt, fmt.Sprintf("The current temperature for %s is %.0f degrees farenheight (%s)", weather.Name, weather.Main.Temp, description), slackbot.WithTyping)
+	bot.Reply(evt,
+		fmt.Sprintf("The current temperature for %s is %.0f degrees farenheight (%s)",
+			weather.Name,
+			weather.Main.Temp,
+			description),
+		slackbot.WithTyping)
 }
