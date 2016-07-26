@@ -49,7 +49,8 @@ a file`main.go` that will contain the code.
 1. Create an account on openweathermap and setup your API key.
 
    1. :star2: Sign up to openweathermap.org and get an API key.
-   1. :star2: Set your `OWM_API_KEY` environment variable to the API key you just created, e.g. 
+   1. :star2: Set your `OWM_API_KEY` environment variable to the API key you
+      just created, e.g.
 
    ```bash
    export OWM_API_KEY=5634bf4c007be5d2f95aceeae356a2ba
@@ -133,14 +134,18 @@ will connect to openweather using the openweathermap library.
 1. :star2: Find the `GetWeather` function and add some code
 that connects to openweathermap. 
 
-   * Hint: To connect, you'll need to use `NewCurrent` method from the openweathermap library.
-   Check out the [README](https://github.com/briandowns/openweathermap) for examples.
+   * Hint: To connect, you'll need to use `NewCurrent` method from the
+   openweathermap library.  Check out the
+   [README](https://github.com/briandowns/openweathermap) for examples.
 
 1. :star2: Get the weather object for the `place` provided
 
-   * Hint: You'll need to use the `CurrentByName` function. Check out the [README](https://github.com/briandowns/openweathermap) for examples.
+   * Hint: You'll need to use the `CurrentByName` function. Check out the
+     [README](https://github.com/briandowns/openweathermap) for examples.
 
-1. :star2: To test, you can add a temporary `GetWeather("02145")` call to the `main()` function and print the results.  Run `go run weatherbot.go` to test.
+1. :star2: To test, you can add a temporary `GetWeather("02145")` call to the
+   `main()` function and print the results.  Run `go run weatherbot.go` to
+   test.
 
 # Part 3: Respond to the `weather <place>` command (5-10 minutes)
 
@@ -152,25 +157,34 @@ We need to add a bot.Hear handler that will look for a `weather <place>` command
 
 1. Populate the `ListenForWeather` handler to respond to messages
 
-  * :star2: In the `ListenForWeather` function, identify the "TODO:" statement and add a `bot.Hear` handler that looks for any `weather (.*)` message from Slack.  It should call the `WeatherHandler` response.
+  * :star2: In the `ListenForWeather` function, identify the "TODO:" statement
+    and add a `bot.Hear` handler that looks for any `weather (.*)` message from
+    Slack.  It should call the `WeatherHandler` response.
 
-  * You can look at [this code](https://github.com/BeepBoopHQ/go-slackbot/blob/master/examples/simple/simple.go#L17) for an example on how to listen for a message.
+  * You can look at
+    [this code](https://github.com/BeepBoopHQ/go-slackbot/blob/master/examples/simple/simple.go#L17)
+    for an example on how to listen for a message.
 
 1. Populate the `WeatherHandler` function
 
-  * :star2: Parse the `place` parameter for weather lookup. Hint: you'll need to look at `evt.Msg.Text` and grab the second part.
+  * :star2: Parse the `place` parameter for weather lookup. Hint: you'll need
+    to look at `evt.Msg.Text` and grab the second part.
 
-  * :star2: Once you have the place, call `GetWeather` for the place to get a response.
+  * :star2: Once you have the place, call `GetWeather` for the place to get a
+    response.
 
-  * :star2: Format the response and add a `bot.Reply` that will return something like this:
+  * :star2: Format the response and add a `bot.Reply` that will return
+    something like this:
 
   ```
   The current temperature for Somerville is 70 degrees farenheight (light rain)
   ```
 
-     * Hint: Look at the `Name`, `Main`, and `Weather[0].Description` fields in the GetWeather() response 
+     * Hint: Look at the `Name`, `Main`, and `Weather[0].Description` fields in
+       the GetWeather() response
 
-1. :star2: To test, run `go run weatherbot.go` and open a direct message to your bot name.  Type `weather 02145` and see what happens!
+1. :star2: To test, run `go run weatherbot.go` and open a direct message to
+   your bot name.  Type `weather 02145` and see what happens!
 
     ![img](https://sc-cdn.scaleengine.net/i/3cad57674be60bd6f971a6b1925025b8.png)
 
