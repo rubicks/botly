@@ -1,1 +1,1 @@
-web: botly
+worker: botly
