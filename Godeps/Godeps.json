@@ -2,7 +2,7 @@
 	"ImportPath": "github.com/rubicks/golang-lab-slack",
 	"GoVersion": "go1.6.3",
 	"Packages": [
-		"./exercises/..."
+		"./..."
 	],
 	"Deps": [
 		{
