@@ -1,1 +1,1 @@
-web: weatherbot
+worker: ./weatherbot
