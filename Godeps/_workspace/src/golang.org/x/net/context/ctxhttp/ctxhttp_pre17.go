@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"strings"
 
-	"golang.org/x/net/context"
+	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
 )
 
 func nop() {}

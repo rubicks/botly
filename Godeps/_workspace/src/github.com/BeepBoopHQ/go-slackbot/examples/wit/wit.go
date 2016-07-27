@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"golang.org/x/net/context"
+	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
 
-	slackbot "github.com/BeepBoopHQ/go-slackbot"
 	"github.com/chris-skud/go-wit"
-	"github.com/nlopes/slack"
+	slackbot "github.com/rubicks/botly/Godeps/_workspace/src/github.com/BeepBoopHQ/go-slackbot"
+	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
 )
 
 func main() {

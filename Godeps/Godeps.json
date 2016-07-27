@@ -1,6 +1,9 @@
 {
 	"ImportPath": "github.com/rubicks/botly",
 	"GoVersion": "go1.6.3",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/BeepBoopHQ/go-slackbot",

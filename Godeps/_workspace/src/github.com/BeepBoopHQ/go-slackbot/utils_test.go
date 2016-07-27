@@ -3,7 +3,7 @@ package slackbot
 import (
 	"testing"
 
-	"github.com/nlopes/slack"
+	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
 	"github.com/stretchr/testify/assert"
 )
 
