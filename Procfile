@@ -1,1 +1,1 @@
-worker: command -v botly
+web: botly
