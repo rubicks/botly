@@ -1,1 +1,1 @@
-worker: golang-lab-slack
+web: botly
