@@ -1,9 +1,6 @@
 {
 	"ImportPath": "github.com/rubicks/botly",
 	"GoVersion": "go1.6.3",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/BeepBoopHQ/go-slackbot",
@@ -21,10 +18,6 @@
 		},
 		{
 			"ImportPath": "golang.org/x/net/context",
-			"Rev": "9f2c271364b418388d150f9c12ecbf12794095c1"
-		},
-		{
-			"ImportPath": "golang.org/x/net/websocket",
 			"Rev": "9f2c271364b418388d150f9c12ecbf12794095c1"
 		}
 	]

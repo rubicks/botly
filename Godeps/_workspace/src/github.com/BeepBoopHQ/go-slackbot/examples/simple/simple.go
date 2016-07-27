@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
+	"golang.org/x/net/context"
 
-	slackbot "github.com/rubicks/botly/Godeps/_workspace/src/github.com/BeepBoopHQ/go-slackbot"
-	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
+	slackbot "github.com/BeepBoopHQ/go-slackbot"
+	"github.com/nlopes/slack"
 )
 
 func main() {

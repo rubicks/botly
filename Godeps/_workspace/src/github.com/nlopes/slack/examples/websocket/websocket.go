@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
+	"github.com/nlopes/slack"
 )
 
 func main() {

@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	slackbot "github.com/rubicks/botly/Godeps/_workspace/src/github.com/BeepBoopHQ/go-slackbot"
-	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/briandowns/openweathermap"
-	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
-	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
+	slackbot "github.com/BeepBoopHQ/go-slackbot"
+	"github.com/briandowns/openweathermap"
+	"github.com/nlopes/slack"
+	"golang.org/x/net/context"
 	"log"
 	"os"
 	"strings"

@@ -13,7 +13,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
+	"golang.org/x/net/context"
 )
 
 // Do sends an HTTP request with the provided http.Client and returns

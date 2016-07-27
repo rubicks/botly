@@ -3,7 +3,7 @@ package slackbot
 import (
 	"regexp"
 
-	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
+	"golang.org/x/net/context"
 )
 
 type Route struct {
