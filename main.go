@@ -6,15 +6,18 @@ import (
 	"github.com/briandowns/openweathermap"
 	"github.com/nlopes/slack"
 	"golang.org/x/net/context"
+	"log"
 	"os"
 	"strings"
 )
 
 func main() {
+	log.Println("main")
 	ListenForWeather()
 }
 
 func GetWeather(place string) (*openweathermap.CurrentWeatherData, error) {
+	log.Println("GetWeather")
 	w, err := openweathermap.NewCurrent("F", "en")
 	if err != nil {
 		return nil, fmt.Errorf("Could not get weather: %v", err)
@@ -28,12 +31,14 @@ func GetWeather(place string) (*openweathermap.CurrentWeatherData, error) {
 }
 
 func ListenForWeather() {
+	log.Println("ListenForWeather")
 	bot := slackbot.New(os.Getenv("SLACK_API_TOKEN"))
 	bot.Hear("(?i)weather (.*)").MessageHandler(WeatherHandler)
 	bot.Run()
 }
 
 func WeatherHandler(ctx context.Context, bot *slackbot.Bot, evt *slack.MessageEvent) {
+	log.Println("WeatherHandler")
 	parts := strings.Split(evt.Msg.Text, " ")
 	if len(parts) != 2 {
 		return
