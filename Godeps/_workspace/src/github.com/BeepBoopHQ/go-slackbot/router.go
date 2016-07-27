@@ -1,6 +1,6 @@
 package slackbot
 
-import "golang.org/x/net/context"
+import "github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
 
 type Router interface {
 	Match(context.Context, *RouteMatch) (bool, context.Context)

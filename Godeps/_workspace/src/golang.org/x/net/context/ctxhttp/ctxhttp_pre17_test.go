@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/net/context"
+	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
 )
 
 // golang.org/issue/14065

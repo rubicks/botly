@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/nlopes/slack"
+	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
 )
 
 /*

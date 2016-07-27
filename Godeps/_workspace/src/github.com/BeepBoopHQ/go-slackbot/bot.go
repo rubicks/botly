@@ -39,9 +39,9 @@ import (
 	"fmt"
 	"time"
 
-	"golang.org/x/net/context"
+	"github.com/rubicks/botly/Godeps/_workspace/src/golang.org/x/net/context"
 
-	"github.com/nlopes/slack"
+	"github.com/rubicks/botly/Godeps/_workspace/src/github.com/nlopes/slack"
 )
 
 const (
