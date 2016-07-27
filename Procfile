@@ -1,1 +1,1 @@
-web: go run weatherbot.go
+web: weatherbot
