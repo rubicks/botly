@@ -1,1 +1,1 @@
-worker: ./weatherbot
+worker: golang-lab-slack
