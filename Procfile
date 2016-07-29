@@ -1,1 +1,1 @@
-web: weatherbot
+worker: golang-slackbots
